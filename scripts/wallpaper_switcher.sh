@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Configuration
-WALLPAPER_DIR="$HOME/.config/hypr/walls/"
+WALLPAPER_DIR="$HOME/wallpaper1"
 STATE_FILE="/tmp/swww_state"
 LIST_CACHE="/tmp/swww_list"
 
