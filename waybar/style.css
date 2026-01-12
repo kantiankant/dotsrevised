@@ -1,0 +1,57 @@
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 9px;
+    min-height: 0;
+}
+
+
+window#waybar {
+    background-color: #BFBFBF;
+    color: #000000;  
+    transition-property: transparent-background;
+    transition-duration: .3s;
+}
+
+/* Individual module styling */
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#tray {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #000000;
+}
+
+/* Optional: Highlight active workspace with an underline or subtle change */
+#workspaces button.active {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+/* Hide empty modules to maintain the thin line */
+window#waybar.empty {
+    background-color: transparent;
+}
+
+/* Specifically target the arch logo module */
+#custom-idk {
+    font-size: 16px; /* Adjust this value until it looks right */
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: transparent;
+    color: #000000;
+}
+
+#workspaces {
+    padding: 0 1px;
+    background-color: transparent;
+    color: #000000;
+
+}
+
+
