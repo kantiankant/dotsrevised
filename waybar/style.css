@@ -15,7 +15,7 @@ window#waybar {
     transition-duration: .3s;
 }
 
-/* Individual module styling */
+/* Individual module styling ()*/
 #clock,
 #pulseaudio,
 #backlight,

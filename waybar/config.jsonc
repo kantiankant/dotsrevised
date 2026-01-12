@@ -1,0 +1,67 @@
+
+{
+    "layer": "top",
+    "position": "top",
+
+    "modules-left": ["custom/idk", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "network",
+        "tray"
+    ],
+
+    "custom/idk": {
+        "format": "<span font='Symbols Nerd Font'>\uf303</span>",
+        "on-click": "walker",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "0",
+            "active": "  "
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    "clock": {
+        "timezone": "Asia/Singapore",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%d/%m/%Y - %H:%M:%S}",
+        "interval": 1
+    },
+
+    "network": {
+        "format-wifi": "   {bandwidthDownBits}",
+        "format-ethernet": "   {bandwidthDownBits}",
+        "format-disconnected": "   No Network",
+        "interval": 5,
+        "tooltip": false
+    }
+}
