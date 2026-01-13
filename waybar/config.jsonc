@@ -1,4 +1,3 @@
-
 {
     "layer": "top",
     "position": "top",
@@ -34,7 +33,7 @@
             "8": "8",
             "9": "9",
             "10": "0",
-            "active": "  "
+            "active": "" 
         },
         "persistent-workspaces": {
             "1": [],
@@ -45,16 +44,39 @@
         }
     },
 
-    "tray": {
-        "icon-size": 16,
-        "spacing": 10
-    },
-
     "clock": {
         "timezone": "Asia/Singapore",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%d/%m/%Y - %H:%M:%S}",
         "interval": 1
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "battery": {
+        "interval": 2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
     },
 
     "network": {
@@ -63,6 +85,11 @@
         "format-disconnected": "   No Network",
         "interval": 5,
         "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
     }
 }
 
