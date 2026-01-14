@@ -14,7 +14,7 @@
 
     "custom/idk": {
         "format": "<span font='Symbols Nerd Font'>\uf303</span>",
-        "on-click": "walker",
+        "on-click": "rofi -show drun",
         "tooltip": false
     },
 
